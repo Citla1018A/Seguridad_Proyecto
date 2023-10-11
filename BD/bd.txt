@@ -1,0 +1,20 @@
+/*insertar rol */
+INSERT INTO public.rol(
+	id, descripcion, estado, nombre_rol)
+	VALUES (-1, 'Usuario registrado por primera vez', true, 'cliente');
+/*insertar rol2*/
+INSERT INTO public.rol(
+	id, descripcion, estado, nombre_rol)
+	VALUES (-10, 'superusuario', true, 'superusuario');
+/*insertar persona*/
+INSERT INTO public.persona(
+	id, apematerno, apepaterno, edad, nombre, telefono)
+	VALUES (-1, 'generico', 'generico', '99', 'cliente', 1234567891);
+/*insertar usuario*/
+INSERT INTO public.usuario(
+	id, correo, estado, pass, ultimo, persona_id, rol_id)
+	VALUES (-10, 'superadmin@live.com', true, '827ccb0eea8a706c4c34a16891f84e7b', null, -1, -10);
+/*insertar usuario2*/
+INSERT INTO public.usuario(
+	id, correo, estado, pass, ultimo, persona_id, rol_id)
+	VALUES (-1, 'nuevo@gmail.com', true, '827ccb0eea8a706c4c34a16891f84e7b', null, -1, -1);
